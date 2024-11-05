@@ -10,9 +10,10 @@ public class GameManeger : MonoBehaviour
         player player1 = new player();
         player player2 = new player();
         player1.InitializePlayer("Baraa", 50);
-        player2.InitializePlayer("Noor", 75);
+        player2.InitializePlayer("Noor", 30);
         player1.Heal(20);         
-        player2.Heal(true);
+        player1.Heal(true);
+        player2.Heal(10);
         player.ShowPlayerCount();
     }
 
