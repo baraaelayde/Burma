@@ -16,7 +16,7 @@ public class player
     public void Heal(int amount)
     {
         health += amount;
-        Debug.Log(playerName + ":" + health);
+        Debug.Log(playerName + ":" + amount);
     }
     public void Heal(bool fullRestore)
     {
