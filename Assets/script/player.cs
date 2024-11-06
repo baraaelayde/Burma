@@ -13,10 +13,11 @@ public class player
         health = initialHealth;
         playerCount++;
     }
-    public void Heal(int amount)
+    public int Heal(int amount)
     {
         health += amount;
         Debug.Log(playerName+" : "+" Increasa health by : "+amount+" Health : "+health);
+        return health;
     }
     public void Heal(bool fullRestore)
     {
