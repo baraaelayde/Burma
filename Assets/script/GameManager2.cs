@@ -13,7 +13,7 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Enemy name is : "+enemy.Name+" Enemy health is : "+enemy.Health);
         player.Heal(10); 
         Debug.Log("Player Health is : "+player.Health);
-        enemy.Attack(player, 100); 
+        enemy.Attack(player, 10); 
         Debug.Log("Player Health is : "+player.Health); 
     }
 
