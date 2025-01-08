@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class KineticSculpure : MonoBehaviour
 {
-        void Start()
+     float rotationSpeed = 50f ; 
+    void Start()
     {
-        
     }
     void Update()
     {
-        float yNew = Mathf.Sin(Time.time );
-        transform.rotation = Quaternion.Euler(new Vector3(0, yNew * 360f, 0));
+       transform.Rotate(0, rotationSpeed * Time.deltaTime, 0) ;
     }
 }
